@@ -6,6 +6,7 @@
   "author": "kinoko109 <tatsuaki1009@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "eslint": "^8.36.0"
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "my-boilerpalte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com.kinoko109:kinoko109/my-boilerplate.git",
+  "author": "kinoko109 <tatsuaki1009@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.36.0"
+  }
+}

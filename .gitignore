@@ -1,1 +1,12 @@
 node_modules
+
+# general
+.DS_Store
+.cache
+Thumbs.db
+
+# ide 関連
+.idea/
+.vscode/*
+!.vscode/settings.template.json
+!.vscode/extensions.json

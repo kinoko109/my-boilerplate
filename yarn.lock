@@ -2255,6 +2255,16 @@ eslint-plugin-jest@^27.2.1:
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
+eslint-plugin-strict-dependencies@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-strict-dependencies/-/eslint-plugin-strict-dependencies-1.0.2.tgz#4482320e8467f967dea51f8602ceda8d4d4f7524"
+  integrity sha512-OqRM2DG+qns8FCxD+9bhEPR9aQtGE/PkmiC744VyxgpMsC6Sujk4SkdiHli5sjHk0qePMTSv5FnnitPdn2/dBw==
+  dependencies:
+    is-glob "^4.0.3"
+    micromatch "^4.0.4"
+    normalize-path "^3.0.0"
+    require-strip-json-comments "^2.0.0"
+
 eslint-plugin-tsdoc@^0.2.17:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.17.tgz#27789495bbd8778abbf92db1707fec2ed3dfe281"
@@ -4281,6 +4291,13 @@ require-from-string@^2.0.2:
   resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
 
+require-strip-json-comments@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/require-strip-json-comments/-/require-strip-json-comments-2.0.0.tgz#71733597bdd5c8581e1c01af485e3540ddc1f5a4"
+  integrity sha512-Pta3KVBaVZ9DHMoOGRd+3PEc/EFZAQ1JVHQpKZfPo018fdT9iEsyPBzqNAgJAzKMF4kbr5G7GaqP0+UOwnGfPw==
+  dependencies:
+    strip-json-comments "^3.0"
+
 resolve-cwd@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-3.0.0.tgz#0f0075f1bb2544766cf73ba6a6e2adfebcb13f2d"
@@ -4603,7 +4620,7 @@ strip-indent@^3.0.0:
   dependencies:
     min-indent "^1.0.0"
 
-strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
+strip-json-comments@^3.0, strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==

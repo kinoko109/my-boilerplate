@@ -33,6 +33,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@swc/core": "^1.3.41",
     "@swc/jest": "^0.2.24",
     "@types/jest": "^29.5.0",

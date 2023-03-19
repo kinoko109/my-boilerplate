@@ -21,7 +21,8 @@
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
     "spell-check": "cspell \"./{src,mock}/**/*.{ts,tsx}\" --no-progress",
     "test": "jest --coverage",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "dependencies": {
     "date-fns": "^2.29.3",

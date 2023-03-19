@@ -4,7 +4,8 @@
   "repository": "git@github.com.kinoko109:kinoko109/my-boilerplate.git",
   "main": "index.js",
   "scripts": {
-    "check-all": "npm-run-all spell-check type-check",
+    "check-code": "run-p lint type-check spell-check",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "fix": "run-p fix:*",
     "fix-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache",
     "fix-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --write --cache",
@@ -15,14 +16,12 @@
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "lint": "run-p lint:*",
     "lint:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --check",
-    "lint:cspell": "node ../../scripts/lint-cspell-dictionary/index.js",
     "lint:css": "stylelint \"./src/**/*.{ts,tsx}\" --max-warnings 0 --cache --cache-strategy content",
     "lint:pack": "fixpack --dryRun",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
     "spell-check": "cspell \"./{src,mock}/**/*.{ts,tsx}\" --no-progress",
     "test": "jest --coverage",
-    "type-check": "tsc",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "type-check": "tsc"
   },
   "dependencies": {
     "date-fns": "^2.29.3",

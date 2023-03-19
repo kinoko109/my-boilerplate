@@ -8,3 +8,5 @@ Thumbs.db
 # ide 関連
 .idea/
 .vscode
+
+*.tsbuildinfo

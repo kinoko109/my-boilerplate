@@ -4,7 +4,7 @@
   "repository": "git@github.com.kinoko109:kinoko109/my-boilerplate.git",
   "main": "index.js",
   "scripts": {
-    "check-all": "npm-run-all type-check -s",
+    "check-all": "npm-run-all spell-check type-check",
     "fix": "run-p fix:*",
     "fix-ts-by-eslint": "eslint \"./{src,mock}/**/*.{ts,tsx}\" --fix --max-warnings 0 --cache",
     "fix-ts-by-prettier": "prettier \"./{src,mock}/**/*.{ts,tsx}\" --write --cache",
